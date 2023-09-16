@@ -5,8 +5,13 @@ import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import { useState } from 'react'
+
+import {Link} from 'react-router-dom'
 
 function Navbarevent() {
+  
+
   return (
     <Navbar expand="lg" className="bg-body-tertiary">
       <Container fluid>
@@ -36,8 +41,7 @@ function Navbarevent() {
             </Nav.Link>
           </Nav>
           <Form className="d-flex">
-          <Button variant="outline-primary">Login</Button>
-            <Button variant="primary mx-2">Signup</Button>
+          <Link to="Logins" className='btn btn-primary'><i class="fa-solid fa-right-to-bracket"></i></Link>
           </Form>
         </Navbar.Collapse>
       </Container>
